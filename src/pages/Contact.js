@@ -8,7 +8,8 @@ export default function Contact() {
     email: '',
     address: '',
     services: [], // Changed from 'service' to 'services' array
-    notes: ''
+    notes: '',
+    source: '' // Where did you find us
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,6 +34,7 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
+    debugger;;
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -46,8 +48,9 @@ export default function Contact() {
       formDataToSend.append('entry.424961682', formData.phone);        // Phone
       formDataToSend.append('entry.1561338999', formData.email);       // Email
       formDataToSend.append('entry.624267994', formData.address);      // Address
-      formDataToSend.append('entry.1290176035', formData.services.join(', ')); // Services (joined with commas)
+      formDataToSend.append('entry.1290176035', formData.services).join(', '); // Services (joined with commas)
       formDataToSend.append('entry.1941564516', formData.notes);      // Notes
+      formDataToSend.append('entry.1816720262', formData.source);      // Source
       
       console.log('Submitting to Google Forms:', {
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSd21mENBR_nywcGlg1uGAh4sajMw-WeT7r7kHdk9wkZhinw2w/formResponse',
@@ -70,7 +73,8 @@ export default function Contact() {
         email: '',
         address: '',
         services: [], // Reset to empty array
-        notes: ''
+        notes: '',
+        source: '' // Reset source
       });
       
       console.log('Form submitted successfully to Google Forms!');
@@ -174,13 +178,20 @@ export default function Contact() {
               onChange={handleInputChange}
               required
             />
+            <Field 
+              label="Where did you find us?" 
+              id="source" 
+              placeholder="Google, Facebook, Referral, etc." 
+              value={formData.source}
+              onChange={handleInputChange}
+            />
             <fieldset>
               <legend className="text-sm font-medium mb-3">Services Needed *</legend>
               <div className="space-y-3">
                 {[
                   'Driveway',
                   'House Wash', 
-                  'Patio / Deck',
+                  'Patio or Deck',
                   'Trash Bin Cleaning',
                   'Gutter Brightening'
                 ].map(service => (
