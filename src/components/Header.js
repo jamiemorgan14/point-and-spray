@@ -14,29 +14,32 @@ export default function Header() {
         role="navigation"
         aria-label="Main navigation"
       >
-        <Link
-          to="/"
-          className="flex items-center gap-3"
-          aria-label="Point & Spray Home"
-          onClick={closeMenu}
-        >
-          <img
-            src={logoImage}
-            alt="Point & Spray Logo - Professional Pressure Washing in Boise, Idaho"
-            className="w-12 h-12 rounded-full object-cover"
-            width="48"
-            height="48"
-          />
-          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+        <div className="flex items-center gap-3">
+          {/* Logo + Name link to home */}
+          <Link
+            to="/"
+            className="flex items-center gap-3"
+            aria-label="Point & Spray Home"
+            onClick={closeMenu}
+          >
+            <img
+              src={logoImage}
+              alt="Point & Spray Logo - Professional Pressure Washing in Boise, Idaho"
+              className="w-12 h-12 rounded-full object-cover"
+              width="48"
+              height="48"
+            />
             <span className="font-bold text-xl text-slate-800">Point & Spray</span>
-            <a
-              href="tel:2085551234"
-              className="text-slate-600 hover:text-slate-800 text-sm sm:text-base"
-            >
-              (208) 555-1234
-            </a>
-          </div>
-        </Link>
+          </Link>
+
+          {/* Phone number link triggers call prompt */}
+          <a
+            href="tel:2085551234"
+            className="text-slate-600 hover:text-slate-800 text-sm sm:text-base"
+          >
+            (208) 555-1234
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8" role="menubar">
