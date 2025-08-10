@@ -34,7 +34,6 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    debugger;;
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -48,7 +47,7 @@ export default function Contact() {
       formDataToSend.append('entry.424961682', formData.phone);        // Phone
       formDataToSend.append('entry.1561338999', formData.email);       // Email
       formDataToSend.append('entry.624267994', formData.address);      // Address
-      formDataToSend.append('entry.1290176035', formData.services).join(', '); // Services (joined with commas)
+      formDataToSend.append('entry.1290176035', formData.services.join(', ')); // Services (joined with commas)
       formDataToSend.append('entry.1941564516', formData.notes);      // Notes
       formDataToSend.append('entry.1816720262', formData.source);      // Source
       
