@@ -1,67 +1,117 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import BandAImage from '../assets/BandA.jpg';
+import AfterDrivewayImage from '../assets/AfterDriveway.jpg';
+import AfterWalkwayImage from '../assets/AfterWalkway.jpg';
 
-export default function Gallery() {
+const Gallery = () => {
+  const galleryItems = [
+    {
+      title: "Before & After Transformation",
+      description: "See the dramatic difference our pressure washing services make. This comprehensive cleaning removed years of built-up grime, algae, and stains, revealing the original beauty underneath.",
+      image: BandAImage,
+      features: ["Complete surface restoration", "Stain removal", "Algae elimination", "Long-lasting results"]
+    },
+    {
+      title: "Driveway Restoration",
+      description: "Professional pressure washing removes years of built-up grime, oil stains, and dirt from concrete and asphalt driveways. Our high-pressure equipment reaches deep into porous surfaces for a thorough clean that lasts.",
+      image: AfterDrivewayImage,
+      features: ["Oil stain removal", "Deep cleaning", "Long-lasting results", "Eco-friendly solutions"]
+    },
+    {
+      title: "Walkway & Sidewalk Cleaning",
+      description: "Improve safety and appearance of your walkways with our thorough cleaning services. We remove slippery algae, dirt, and stains to restore the original beauty of your hardscapes.",
+      image: AfterWalkwayImage,
+      features: ["Safety improvement", "Stain removal", "Algae elimination", "Enhanced appearance"]
+    }
+  ];
+
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Pressure Washing Before & After Gallery | Point & Spray Boise</title>
-        <meta name="description" content="See the amazing results of our pressure washing services in Boise. Before & after photos of house washing, driveway cleaning, patio restoration & more." />
+        <title>Gallery - Point & Spray | Pressure Washing Before & After Results in Boise, ID</title>
+        <meta name="description" content="See the amazing before and after results of our pressure washing services in Boise. Real transformations from driveway cleaning, house washing, and walkway restoration." />
         <meta name="keywords" content="pressure washing before after boise, pressure washing results boise, pressure washing photos boise, pressure washing gallery idaho" />
-        <meta property="og:title" content="Pressure Washing Before & After Gallery | Point & Spray Boise" />
-        <meta property="og:description" content="See the amazing results of our pressure washing services in Boise. Before & after photos of house washing, driveway cleaning & more." />
+        <meta property="og:title" content="Gallery - Point & Spray | Pressure Washing Before & After Results" />
+        <meta property="og:description" content="See the amazing before and after results of our pressure washing services in Boise. Real transformations from real customers." />
         <meta property="og:url" content="https://pointandsprayidaho.com/gallery" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://pointandsprayidaho.com/gallery" />
       </Helmet>
-      
-      <section className="mx-auto max-w-6xl px-4 py-16">
-        <header className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-slate-800 mb-4">Before & After Gallery</h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            See the amazing transformation our professional pressure washing services deliver. 
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Results Gallery
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            See the dramatic transformations our professional pressure washing services deliver. 
             Real results from real customers in Boise and surrounding areas.
           </p>
         </header>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
-          {[
-            {title:'House Siding Transformation', desc:'Removed years of algae and mildew buildup'},
-            {title:'Driveway Restoration', desc:'Eliminated oil stains and surface grime'},
-            {title:'Patio Revival', desc:'Restored wood deck to its original beauty'},
-            {title:'Gutter Brightening', desc:'Removed oxidation and black streaks'},
-            {title:'Fence Cleaning', desc:'Brought back the natural wood color'},
-            {title:'Concrete Renewal', desc:'Garage floor degreasing and cleaning'},
-          ].map((item, index) => (
-            <article key={index} className="group cursor-pointer" role="listitem">
-              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center mb-4 group-hover:shadow-lg transition-shadow">
-                <div className="text-center text-slate-500">
-                  <div className="text-4xl mb-2">📸</div>
-                  <p className="text-sm font-medium">Photo {index + 1}</p>
-                  <p className="text-xs">Coming Soon</p>
+
+        <div className="space-y-16">
+          {galleryItems.map((item, index) => (
+            <article 
+              key={index}
+              className={`flex flex-col lg:flex-row gap-8 items-center ${
+                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+              }`}
+            >
+              <div className="lg:w-1/2">
+                <img
+                  src={item.image}
+                  alt={`${item.title} - ${item.description}`}
+                  className="w-full h-auto rounded-lg shadow-xl"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              
+              <div className="lg:w-1/2">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  {item.title}
+                </h2>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {item.description}
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {item.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start">
+                      <span className="text-green-500 mr-2">✓</span>
+                      <span className="text-sm text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="text-sm text-gray-500 italic">
+                  <p>Professional pressure washing by Point & Spray</p>
+                  <p>Boise, Idaho area</p>
                 </div>
               </div>
-              <h2 className="font-semibold text-slate-800 mb-2">{item.title}</h2>
-              <p className="text-sm text-slate-600">{item.desc}</p>
             </article>
           ))}
         </div>
-        
-        <div className="mt-16 text-center bg-sky-50 rounded-3xl p-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Want to See More Results?</h2>
-          <p className="text-slate-600 mb-6">
-            Our gallery is growing! Check back soon for more before & after photos, 
-            or contact us to see examples of our work in your area.
-          </p>
-          <a 
-            href="/contact" 
-            className="inline-flex items-center justify-center rounded-2xl bg-sky-600 hover:bg-sky-700 px-8 py-4 font-semibold text-white text-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            aria-label="Contact Point & Spray for more examples of our work"
-          >
-            Contact Us Today
-          </a>
+
+        <div className="mt-20 text-center">
+          <div className="bg-blue-50 rounded-lg p-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              Ready to Transform Your Property?
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Contact us today for a free quote and see how we can restore the beauty of your home or business.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
+              aria-label="Get a free quote for pressure washing services"
+            >
+              Get Free Quote
+            </a>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
-} 
+};
+
+export default Gallery; 

@@ -25,12 +25,12 @@ export default function Pricing() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
           {[
-            {title:'House Soft Wash', price:'$150+', desc:'Low‑pressure wash for siding and trim. Kills algae and mildew without damage.'},
-            {title:'Driveways & Sidewalks', price:'$80+', desc:'Pro surface cleaner for even, streak‑free results.'},
-            {title:'Patios, Decks & Fences', price:'$120+', desc:'Restore wood and composite surfaces the safe way.'},
-            {title:'Trash Bin Cleaning', price:'$25', desc:'Deodorize and sanitize your bins on trash day.'},
-            {title:'Gutter Brightening', price:'$60+', desc:'Remove black "tiger stripes" and oxidation on gutter exteriors.'},
-            {title:'Garage & Shop Floors', price:'$100+', desc:'Degrease and clean concrete for a fresh start.'},
+            {title:'House Soft Wash', price:'$200+', desc:'Low‑pressure wash for siding and trim. Kills algae and mildew without damage.'},
+            {title:'Driveways & Sidewalks', price:'$100+', desc:'Pro surface cleaner for even, streak‑free results.'},
+            {title:'Patios, Decks & Fences', price:'$150+', desc:'Restore wood and composite surfaces the safe way.'},
+            {title:'Trash Bin Cleaning', price:'$25/bin', desc:'Deodorize and sanitize your bins on trash day.'},
+            {title:'Gutter Brightening', price:'$100+', desc:'Remove black "tiger stripes" and oxidation on gutter exteriors.'},
+            {title:'Garage & Shop Floors', price:'$250+', desc:'Degrease and clean concrete for a fresh start.'},
           ].map((s) => (
             <article key={s.title} className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow" role="listitem">
               <div className="flex items-start justify-between mb-3">
@@ -40,6 +40,15 @@ export default function Pricing() {
               <p className="text-slate-600 leading-relaxed">{s.desc}</p>
             </article>
           ))}
+        </div>
+        
+        {/* Pricing Disclaimer */}
+        <div className="text-center mt-8 mb-8">
+          <div className="inline-block bg-amber-50 border border-amber-200 rounded-lg px-6 py-4">
+            <p className="text-amber-800 text-sm font-medium">
+              💡 <strong>Note:</strong> Pricing depends on size and complexity of the job. Final pricing will be determined upon quote.
+            </p>
+          </div>
         </div>
         
         <div className="mt-12 text-center bg-sky-50 rounded-3xl p-8">

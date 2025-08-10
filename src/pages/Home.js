@@ -1,9 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import TrustBar from '../components/TrustBar';
-import HeroImage from '../components/HeroImage';
-// Import your image here
-import heroImage from '../assets/PointAndSprayLogo.PNG';
+import BandAImage from '../assets/BandA.jpg';
 
 export default function Home() {
   return (
@@ -21,47 +19,60 @@ export default function Home() {
       
       <section className="bg-gradient-to-b from-sky-50 to-white">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-                Professional Pressure Washing in <span className="text-sky-600">Boise</span>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                Professional Pressure Washing
+                <span className="block text-blue-600">Veteran-Owned & Family-Focused</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Our two German Shorthaired Pointers were the inspiration for the name "Point & Spray." They point, we spray!
-                Just like these loyal hunting companions, we're focused, reliable, and get the job done right.
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Named after our two German Shorthaired Pointers who love exploring the outdoors, 
+                Point & Spray brings the same energy and precision to every job. As a veteran-owned 
+                business, we understand the value of hard work, attention to detail, and serving our community.
               </p>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                As a <strong>veteran-owned business</strong>, we bring the same discipline and attention to detail to every pressure washing job. 
-                Whether it's your house, driveway, or patio, we treat your property with the care it deserves.
-              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span className="text-gray-700">Driveways, houses, patios & more</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span className="text-gray-700">Eco-friendly cleaning solutions</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span className="text-gray-700">Serving Boise & surrounding areas</span>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="/contact" 
-                  className="inline-flex items-center justify-center rounded-2xl bg-sky-600 hover:bg-sky-700 px-8 py-4 font-semibold text-white text-lg shadow-lg hover:shadow-xl transition-all duration-200"
-                  aria-label="Get your free pressure washing quote"
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 text-lg"
+                  aria-label="Get a free quote for pressure washing services"
                 >
-                  Get Your Free Quote
+                  Get Free Quote
                 </a>
-                <a 
-                  href="tel:+1-208-994-4085" 
-                  className="inline-flex items-center justify-center rounded-2xl border-2 border-slate-300 hover:border-slate-400 px-8 py-4 font-semibold text-slate-700 text-lg transition-colors duration-200"
-                  aria-label="Call Point & Spray at (208) 994-4085"
+                <a
+                  href="tel:208-555-0123"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-200 text-lg"
+                  aria-label="Call Point & Spray at 208-555-0123"
                 >
-                  📞 (208) 994-4085
+                  Call Now: 208-555-0123
                 </a>
               </div>
             </div>
             
-            <div className="relative">
-              <HeroImage 
-                src={heroImage} 
-                alt="Point & Spray - Professional pressure washing services in Boise, Idaho. Veteran-owned business with German Shorthaired Pointers Ruger and Remington."
-                className="shadow-2xl"
+            <div className="mt-12 lg:mt-0">
+              <img
+                src={BandAImage}
+                alt="Before and after pressure washing results showing dramatic transformation"
+                className="w-full h-auto rounded-lg shadow-2xl"
+                loading="eager"
+                decoding="async"
               />
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border border-slate-200">
-                <p className="text-sm font-semibold text-slate-800">Veteran-Owned</p>
-                <p className="text-xs text-slate-600">Proud to serve</p>
-              </div>
+              <p className="text-center text-sm text-gray-500 mt-3 italic">
+                See the dramatic difference our professional pressure washing makes
+              </p>
             </div>
           </div>
         </div>

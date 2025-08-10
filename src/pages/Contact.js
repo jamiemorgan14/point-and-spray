@@ -56,7 +56,7 @@ export default function Contact() {
       });
 
       // Submit to Google Forms
-      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSd21mENBR_nywcGlg1uGAh4sajMw-WeT7r7kHdk9wkZhinw2w/formResponse', {
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSd21mENBR_nywcGlg1uGAh4sajMw-WeT7r7kHdk9wkZhinw2w/formResponse', {
         method: 'POST',
         body: formDataToSend,
         mode: 'no-cors' // Required for Google Forms
@@ -105,7 +105,7 @@ export default function Contact() {
             <p className="mt-2 text-slate-300 text-lg">
               Pick a time that works for you. We'll confirm details and send a text before arrival.
             </p>
-            <ul className="mt-6 space-y-3 text-slate-300 text-sm" role="list">
+            <ul className="mt-6 space-y-3 text-slate-300 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-sky-400 mt-1">📍</span>
                 <span>Service area: Boise, Meridian, Eagle, Garden City</span>
@@ -137,7 +137,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <form onSubmit={handleSubmit} className="rounded-2xl bg-white p-8 text-slate-800 space-y-6 shadow-lg" role="form" aria-label="Request a quote form">
+          <form onSubmit={handleSubmit} className="rounded-2xl bg-white p-8 text-slate-800 space-y-6 shadow-lg" aria-label="Request a quote form">
             <h2 className="text-2xl font-bold text-slate-800 mb-6">Request Your Free Quote</h2>
             
             <div className="grid sm:grid-cols-2 gap-4">
