@@ -1,30 +1,61 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 export default function Pricing() {
   return (
-    <section className="bg-white border-y border-slate-200">
-      <div className="mx-auto max-w-6xl px-4 py-16">
-        <h3 className="text-2xl font-bold">Simple, flat‑rate pricing</h3>
-        <p className="mt-2 text-slate-600">Transparent tiers so you can book without back‑and‑forth.</p>
-        <div className="mt-8 grid md:grid-cols-3 gap-6">
-          <Card title="Driveway" price="$149+" points={["Single‑car","Oil spot pre‑treat included","Add sidewalk +$25"]} />
-          <Card title="House Wash" price="$299+" points={["Up to 1,500 sq ft","Soft‑wash siding & trim","Windows rinsed clear"]} featured />
-          <Card title="Deck/Fence" price="$199+" points={["Up to 200 sq ft","Soft‑wash wood/composite","Sealant prep ready"]} />
+    <>
+      <Helmet>
+        <title>Pressure Washing Pricing & Rates | Point & Spray Boise</title>
+        <meta name="description" content="Transparent pressure washing pricing in Boise, Idaho. Get clear rates for house washing, driveway cleaning, patio restoration & more. No hidden fees!" />
+        <meta name="keywords" content="pressure washing prices boise, pressure washing rates boise, pressure washing cost boise, pressure washing pricing idaho" />
+        <meta property="og:title" content="Pressure Washing Pricing & Rates | Point & Spray Boise" />
+        <meta property="og:description" content="Transparent pressure washing pricing in Boise, Idaho. Get clear rates for house washing, driveway cleaning & more." />
+        <meta property="og:url" content="https://pointandsprayidaho.com/pricing" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://pointandsprayidaho.com/pricing" />
+      </Helmet>
+      
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <header className="text-center mb-12">
+          <h1 className="text-3xl font-bold text-slate-800 mb-4">Transparent Pricing</h1>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Clear, upfront pricing with no hidden fees. Get exactly what you pay for with professional results.
+          </p>
+        </header>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+          {[
+            {title:'House Soft Wash', price:'$150+', desc:'Low‑pressure wash for siding and trim. Kills algae and mildew without damage.'},
+            {title:'Driveways & Sidewalks', price:'$80+', desc:'Pro surface cleaner for even, streak‑free results.'},
+            {title:'Patios, Decks & Fences', price:'$120+', desc:'Restore wood and composite surfaces the safe way.'},
+            {title:'Trash Bin Cleaning', price:'$25', desc:'Deodorize and sanitize your bins on trash day.'},
+            {title:'Gutter Brightening', price:'$60+', desc:'Remove black "tiger stripes" and oxidation on gutter exteriors.'},
+            {title:'Garage & Shop Floors', price:'$100+', desc:'Degrease and clean concrete for a fresh start.'},
+          ].map((s) => (
+            <article key={s.title} className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow" role="listitem">
+              <div className="flex items-start justify-between mb-3">
+                <h2 className="font-semibold text-lg text-slate-800">{s.title}</h2>
+                <span className="text-2xl font-bold text-sky-600">{s.price}</span>
+              </div>
+              <p className="text-slate-600 leading-relaxed">{s.desc}</p>
+            </article>
+          ))}
         </div>
-        <p className="mt-4 text-xs text-slate-500">Final price may vary based on condition and size. We'll confirm before work begins.</p>
-      </div>
-    </section>
-  );
-}
-
-function Card({title, price, points, featured}){
-  return (
-    <div className={`rounded-2xl p-6 border ${featured? 'border-sky-300 bg-sky-50 shadow': 'border-slate-200 bg-white shadow-sm'}`}>
-      <h4 className="text-lg font-semibold">{title}</h4>
-      <p className="mt-1 text-3xl font-extrabold">{price}</p>
-      <ul className="mt-4 space-y-2 text-sm text-slate-600">
-        {points.map((p)=> <li key={p}>• {p}</li>)}
-      </ul>
-    </div>
+        
+        <div className="mt-12 text-center bg-sky-50 rounded-3xl p-8">
+          <h2 className="text-2xl font-bold text-slate-800 mb-4">Ready to Get Started?</h2>
+          <p className="text-slate-600 mb-6">
+            Get your personalized quote today. No obligation, just honest pricing.
+          </p>
+          <a 
+            href="/contact" 
+            className="inline-flex items-center justify-center rounded-2xl bg-sky-600 hover:bg-sky-700 px-8 py-4 font-semibold text-white text-lg shadow-lg hover:shadow-xl transition-all duration-200"
+            aria-label="Get your free pressure washing quote"
+          >
+            Get Your Free Quote
+          </a>
+        </div>
+      </section>
+    </>
   );
 } 

@@ -1,25 +1,27 @@
 import React from 'react';
 
-export default function HeroImage({ imageSrc, altText, fallbackText = "Professional pressure washing services" }) {
-  if (imageSrc) {
+export default function HeroImage({ src, alt, className = "" }) {
+  if (!src) {
     return (
-      <img 
-        src={imageSrc} 
-        alt={altText || fallbackText}
-        className="aspect-[4/3] rounded-2xl object-cover w-full shadow-lg"
-        loading="lazy"
-      />
+      <div 
+        className={`bg-gradient-to-br from-sky-100 to-blue-200 rounded-3xl p-12 text-center ${className}`}
+        role="img"
+        aria-label="Hero image placeholder"
+      >
+        <div className="text-sky-600 text-6xl mb-4">🏠</div>
+        <h2 className="text-2xl font-bold text-slate-800 mb-2">Professional Pressure Washing</h2>
+        <p className="text-slate-600">Transform your home's exterior</p>
+      </div>
     );
   }
 
-  // Fallback placeholder when no image is provided
   return (
-    <div className="aspect-[4/3] rounded-2xl bg-slate-200 flex items-center justify-center shadow-lg">
-      <div className="text-center text-slate-500">
-        <p className="text-lg font-medium mb-2">Add Your Image Here</p>
-        <p className="text-sm">Place your hero image in src/assets/</p>
-        <p className="text-xs">Recommended: 800x600px or larger</p>
-      </div>
-    </div>
+    <img 
+      src={src} 
+      alt={alt || "Professional pressure washing services in Boise, Idaho"} 
+      className={`w-full h-auto rounded-3xl object-cover ${className}`}
+      loading="eager"
+      decoding="async"
+    />
   );
 } 
