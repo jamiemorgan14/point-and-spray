@@ -96,7 +96,7 @@ export default function Contact() {
             <li>• Insured • Satisfaction guaranteed</li>
           </ul>
           <div className="mt-6 flex flex-col gap-3">
-            <a className="rounded-2xl bg-sky-500 hover:bg-sky-600 px-5 py-3 font-semibold text-white text-center" href="https://calendly.com/pointandspray/book">Book Online</a>
+            {/* <a className="rounded-2xl bg-sky-500 hover:bg-sky-600 px-5 py-3 font-semibold text-white text-center" href="https://calendly.com/pointandspray/book">Book Online</a> */}
             <a className="rounded-2xl border border-slate-600 px-5 py-3 text-center" href="mailto:jamie@pointandsprayidaho.com">jamie@pointandsprayidaho.com</a>
             <a className="rounded-2xl border border-slate-600 px-5 py-3 text-center" href="tel:+1-208-994-4085">(208) 994-4085</a>
           </div>
