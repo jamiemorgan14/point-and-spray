@@ -45,7 +45,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-8" role="menubar">
           <Link to="/" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Home</Link>
           <Link to="/services" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Services</Link>
-          <Link to="/pricing" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Pricing</Link>
+          {/* <Link to="/pricing" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Pricing</Link> */}
           <Link to="/gallery" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Gallery</Link>
           <Link to="/contact" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Contact</Link>
         </div>
@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex flex-col gap-4" role="menu" aria-label="Mobile">
             <Link to="/" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Home</Link>
             <Link to="/services" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Services</Link>
-            <Link to="/pricing" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Pricing</Link>
+            {/* <Link to="/pricing" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Pricing</Link> */}
             <Link to="/gallery" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Gallery</Link>
             <Link to="/contact" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Contact</Link>
           </div>
