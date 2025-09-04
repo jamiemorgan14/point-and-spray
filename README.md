@@ -63,4 +63,4 @@ The build folder contains optimized production files ready for deployment to any
 
 ## Contact
 
-For questions about the website or to book services, visit the contact page or call (208) 555-0133.
+For questions about the website or to book services, visit the contact page or call (208) 994-4085.

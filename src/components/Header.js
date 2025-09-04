@@ -34,10 +34,10 @@ export default function Header() {
 
           {/* Phone number link triggers call prompt */}
           <a
-            href="tel:2085551234"
+            href="tel:2089944085"
             className="text-slate-600 hover:text-slate-800 text-sm sm:text-base"
           >
-            (208) 555-1234
+            (208) 994-4085
           </a>
         </div>
 

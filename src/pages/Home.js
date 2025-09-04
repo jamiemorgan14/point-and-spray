@@ -53,11 +53,11 @@ export default function Home() {
                   Get Free Quote
                 </a>
                 <a
-                  href="tel:208-555-0123"
+                  href="tel:208-994-4085"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-200 text-lg"
-                  aria-label="Call Point & Spray at 208-555-0123"
+                  aria-label="Call Point & Spray at 208-994-4085"
                 >
-                  Call Now: 208-555-0123
+                  Call Now: 208-994-4085
                 </a>
               </div>
             </div>
