@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import ReviewLinks from '../components/ReviewLinks';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -249,6 +250,19 @@ export default function Contact() {
               We'll review your request and get back to you within 24 hours with a quote and available appointment times.
             </p>
           </form>
+        </div>
+      </section>
+      
+      {/* Review prompt for returning customers */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-semibold text-slate-800">Already worked with us?</h2>
+              <p className="text-slate-600">Your feedback helps neighbors choose with confidence.</p>
+            </div>
+            <ReviewLinks layout="row" />
+          </div>
         </div>
       </section>
     </>

@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         

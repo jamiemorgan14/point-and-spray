@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import TrustBar from '../components/TrustBar';
 import BandAImage from '../assets/BandA.jpg';
+import reviews from '../config/reviews';
 
 export default function Home() {
   return (
@@ -58,6 +59,15 @@ export default function Home() {
                   aria-label="Call Point & Spray at 208-994-4085"
                 >
                   Call Now: 208-994-4085
+                </a>
+                <a
+                  href={reviews.primary.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 text-blue-700 hover:text-blue-800 underline text-lg"
+                  aria-label="Read our reviews"
+                >
+                  ⭐ Read Reviews
                 </a>
               </div>
             </div>

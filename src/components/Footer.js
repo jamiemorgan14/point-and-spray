@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReviewLinks from './ReviewLinks';
 
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300" role="contentinfo">
       <div className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold text-white mb-4">Point & Spray</h3>
             <p className="text-sm text-slate-400 mb-4">
@@ -45,6 +46,12 @@ export default function Footer() {
                 📍 Service Area: Boise, Meridian, Eagle, Garden City
               </p>
             </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-white mb-4">Reviews</h4>
+            <p className="text-sm text-slate-400 mb-3">Loved our work? Share your experience:</p>
+            <ReviewLinks layout="column" size="sm" />
           </div>
         </div>
         

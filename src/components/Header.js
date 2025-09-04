@@ -47,6 +47,7 @@ export default function Header() {
           <Link to="/services" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Services</Link>
           {/* <Link to="/pricing" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Pricing</Link> */}
           <Link to="/gallery" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Gallery</Link>
+          <Link to="/reviews" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Reviews</Link>
           <Link to="/contact" className="text-slate-600 hover:text-slate-800 transition-colors" role="menuitem">Contact</Link>
         </div>
 
@@ -92,6 +93,7 @@ export default function Header() {
             <Link to="/services" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Services</Link>
             {/* <Link to="/pricing" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Pricing</Link> */}
             <Link to="/gallery" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Gallery</Link>
+            <Link to="/reviews" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Reviews</Link>
             <Link to="/contact" onClick={closeMenu} className="py-2 text-lg text-slate-800" role="menuitem">Contact</Link>
           </div>
         </div>
