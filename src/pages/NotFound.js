@@ -7,7 +7,7 @@ export default function NotFound() {
     <>
       <Helmet>
         <title>Page Not Found | Point & Spray Boise</title>
-        <meta name="description" content="The page you're looking for doesn't exist. Return to Point & Spray's professional pressure washing services in Boise, Idaho." />
+        <meta name="description" content="The page you're looking for doesn't exist. Return to Point & Spray's window cleaning and pressure washing services in Boise, Idaho." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       

@@ -9,7 +9,7 @@ export default function HeroImage({ src, alt, className = "" }) {
         aria-label="Hero image placeholder"
       >
         <div className="text-sky-600 text-6xl mb-4">🏠</div>
-        <h2 className="text-2xl font-bold text-slate-800 mb-2">Professional Pressure Washing</h2>
+        <h2 className="text-2xl font-bold text-slate-800 mb-2">Window Cleaning & Pressure Washing</h2>
         <p className="text-slate-600">Transform your home's exterior</p>
       </div>
     );
@@ -18,7 +18,7 @@ export default function HeroImage({ src, alt, className = "" }) {
   return (
     <img 
       src={src} 
-      alt={alt || "Professional pressure washing services in Boise, Idaho"} 
+      alt={alt || "Professional window cleaning and pressure washing services in Boise, Idaho"}
       className={`w-full h-auto rounded-3xl object-cover ${className}`}
       loading="eager"
       decoding="async"

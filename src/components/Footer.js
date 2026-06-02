@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Point & Spray</h3>
             <p className="text-sm text-slate-400 mb-4">
-              Veteran-owned pressure washing services in Boise, Meridian, Eagle & Garden City. 
-              Professional cleaning solutions that fit your schedule.
+              Veteran-owned window cleaning and pressure washing in Boise, Meridian, Eagle & Garden City.
+              Professional exterior cleaning that fits your schedule.
             </p>
             <div className="flex items-center gap-2 text-sm text-slate-400">
               <span>📍</span>
@@ -22,6 +22,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
+              <li><Link to="/services" className="hover:text-white transition-colors">Window Cleaning</Link></li>
+              <li><Link to="/services" className="hover:text-white transition-colors">Screen Cleaning</Link></li>
               <li><Link to="/services" className="hover:text-white transition-colors">House Soft Wash</Link></li>
               <li><Link to="/services" className="hover:text-white transition-colors">Driveway Cleaning</Link></li>
               <li><Link to="/services" className="hover:text-white transition-colors">Patio Restoration</Link></li>

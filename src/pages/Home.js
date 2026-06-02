@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Point & Spray - Professional Pressure Washing in Boise, Idaho | Veteran-Owned</title>
-        <meta name="description" content="Point & Spray offers professional pressure washing services in Boise, Meridian, Eagle & Garden City. Veteran-owned, family-focused cleaning solutions. Get your free quote today!" />
-        <meta name="keywords" content="pressure washing boise, house washing boise, driveway cleaning boise, veteran owned pressure washing, pressure washing idaho" />
-        <meta property="og:title" content="Point & Spray - Professional Pressure Washing in Boise, Idaho" />
-        <meta property="og:description" content="Veteran-owned pressure washing services in Boise, Meridian, Eagle & Garden City. Professional house washing, driveway cleaning, patio restoration & more." />
+        <title>Point & Spray - Window Cleaning & Pressure Washing in Boise, Idaho | Veteran-Owned</title>
+        <meta name="description" content="Point & Spray offers professional window cleaning and pressure washing in Boise, Meridian, Eagle & Garden City. Streak-free windows, house washing, driveway cleaning & more. Free quotes!" />
+        <meta name="keywords" content="window cleaning boise, window washing boise, pressure washing boise, house washing boise, driveway cleaning boise, veteran owned cleaning boise" />
+        <meta property="og:title" content="Point & Spray - Window Cleaning & Pressure Washing in Boise, Idaho" />
+        <meta property="og:description" content="Veteran-owned window cleaning and pressure washing in Boise, Meridian, Eagle & Garden City. Streak-free windows, house washing, driveway cleaning & more." />
         <meta property="og:url" content="https://pointandsprayidaho.com/" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://pointandsprayidaho.com/" />
@@ -23,33 +23,34 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Professional Pressure Washing
+                Window Cleaning & Pressure Washing
                 <span className="block text-blue-600">Veteran-Owned & Family-Focused</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Named after our two German Shorthaired Pointers who love exploring the outdoors, 
-                Point & Spray brings the same energy and precision to every job. As a veteran-owned 
-                business, we understand the value of hard work, attention to detail, and serving our community.
+                Named after our two German Shorthaired Pointers who love exploring the outdoors,
+                Point & Spray brings the same energy and precision to every job. Crystal-clear windows,
+                spotless driveways, fresh siding — as a veteran-owned business, we hold ourselves to a
+                higher standard on every property we touch.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
                   <span className="text-green-500 mr-3">✓</span>
-                  <span className="text-gray-700">Driveways, houses, patios & more</span>
+                  <span className="text-gray-700">Streak-free window cleaning — interior & exterior</span>
                 </div>
                 <div className="flex items-center">
                   <span className="text-green-500 mr-3">✓</span>
-                  <span className="text-gray-700">Eco-friendly cleaning solutions</span>
+                  <span className="text-gray-700">Pressure washing — driveways, houses, patios & more</span>
                 </div>
                 <div className="flex items-center">
                   <span className="text-green-500 mr-3">✓</span>
-                  <span className="text-gray-700">Serving Boise & surrounding areas</span>
+                  <span className="text-gray-700">Eco-friendly solutions · Serving Boise & surrounding areas</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 text-lg"
-                  aria-label="Get a free quote for pressure washing services"
+                  aria-label="Get a free quote for window cleaning and pressure washing services"
                 >
                   Get Free Quote
                 </a>
@@ -75,13 +76,13 @@ export default function Home() {
             <div className="mt-12 lg:mt-0">
               <img
                 src={BandAImage}
-                alt="Before and after pressure washing results showing dramatic transformation"
+                alt="Before and after exterior cleaning results showing dramatic transformation"
                 className="w-full h-auto rounded-lg shadow-2xl"
                 loading="eager"
                 decoding="async"
               />
               <p className="text-center text-sm text-gray-500 mt-3 italic">
-                See the dramatic difference our professional pressure washing makes
+                Real results from our exterior cleaning services in the Boise area
               </p>
             </div>
           </div>

@@ -92,11 +92,11 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Get Your Free Pressure Washing Quote | Point & Spray Boise</title>
-        <meta name="description" content="Get your free pressure washing quote in Boise, Meridian, Eagle & Garden City. Veteran-owned, professional service. Book online or call (208) 994-4085 today!" />
-        <meta name="keywords" content="pressure washing quote boise, pressure washing estimate boise, book pressure washing boise, pressure washing contact boise" />
-        <meta property="og:title" content="Get Your Free Pressure Washing Quote | Point & Spray Boise" />
-        <meta property="og:description" content="Get your free pressure washing quote in Boise, Meridian, Eagle & Garden City. Veteran-owned, professional service." />
+        <title>Get Your Free Quote | Window Cleaning & Pressure Washing | Point & Spray Boise</title>
+        <meta name="description" content="Get your free quote for window cleaning or pressure washing in Boise, Meridian, Eagle & Garden City. Veteran-owned, professional service. Book online or call (208) 994-4085 today!" />
+        <meta name="keywords" content="window cleaning quote boise, pressure washing quote boise, exterior cleaning estimate boise, book window cleaning boise, contact point and spray" />
+        <meta property="og:title" content="Get Your Free Quote | Window Cleaning & Pressure Washing | Point & Spray Boise" />
+        <meta property="og:description" content="Get your free quote for window cleaning or pressure washing in Boise, Meridian, Eagle & Garden City. Veteran-owned, professional service." />
         <meta property="og:url" content="https://pointandsprayidaho.com/contact" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://pointandsprayidaho.com/contact" />
@@ -105,9 +105,9 @@ export default function Contact() {
       <section className="bg-slate-900 text-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h1 className="text-3xl font-bold mb-4">Book Your Professional Clean</h1>
+            <h1 className="text-3xl font-bold mb-4">Book Your Exterior Clean</h1>
             <p className="mt-2 text-slate-300 text-lg">
-              Pick a time that works for you. We'll confirm details and send a text before arrival.
+              Window cleaning, pressure washing, or both — pick a time that works for you. We'll confirm details and send a text before arrival.
             </p>
             <ul className="mt-6 space-y-3 text-slate-300 text-sm">
               <li className="flex items-start gap-2">
@@ -189,11 +189,14 @@ export default function Contact() {
               <legend className="text-sm font-medium mb-3">Services Needed *</legend>
               <div className="space-y-3">
                 {[
-                  'Driveway',
-                  'House Wash', 
+                  'Window Cleaning (Exterior)',
+                  'Window Cleaning (Interior & Exterior)',
+                  'Screen Cleaning',
+                  'House Soft Wash',
+                  'Driveway / Sidewalk',
                   'Patio or Deck',
+                  'Gutter Brightening',
                   'Trash Bin Cleaning',
-                  'Gutter Brightening'
                 ].map(service => (
                   <label key={service} className="flex items-center gap-3 cursor-pointer">
                     <input

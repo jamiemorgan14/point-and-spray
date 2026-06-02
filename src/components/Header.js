@@ -24,7 +24,7 @@ export default function Header() {
           >
             <img
               src={logoImage}
-              alt="Point & Spray Logo - Professional Pressure Washing in Boise, Idaho"
+              alt="Point & Spray Logo - Window Cleaning & Pressure Washing in Boise, Idaho"
               className="w-12 h-12 rounded-full object-cover"
               width="48"
               height="48"

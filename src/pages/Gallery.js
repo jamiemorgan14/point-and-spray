@@ -8,7 +8,7 @@ const Gallery = () => {
   const galleryItems = [
     {
       title: "Before & After Transformation",
-      description: "See the dramatic difference our pressure washing services make. This comprehensive cleaning removed years of built-up grime, algae, and stains, revealing the original beauty underneath.",
+      description: "See the difference a professional exterior clean makes. This comprehensive service removed years of built-up grime, algae, and staining — revealing the original surface underneath.",
       image: BandAImage,
       features: ["Complete surface restoration", "Stain removal", "Algae elimination", "Long-lasting results"]
     },
@@ -29,11 +29,11 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Gallery - Point & Spray | Pressure Washing Before & After Results in Boise, ID</title>
-        <meta name="description" content="See the amazing before and after results of our pressure washing services in Boise. Real transformations from driveway cleaning, house washing, and walkway restoration." />
-        <meta name="keywords" content="pressure washing before after boise, pressure washing results boise, pressure washing photos boise, pressure washing gallery idaho" />
-        <meta property="og:title" content="Gallery - Point & Spray | Pressure Washing Before & After Results" />
-        <meta property="og:description" content="See the amazing before and after results of our pressure washing services in Boise. Real transformations from real customers." />
+        <title>Gallery - Point & Spray | Window Cleaning & Pressure Washing Results in Boise, ID</title>
+        <meta name="description" content="See the before and after results of our window cleaning and pressure washing services in Boise. Real transformations from driveway cleaning, house washing, and walkway restoration." />
+        <meta name="keywords" content="window cleaning results boise, pressure washing before after boise, exterior cleaning photos boise, pressure washing gallery idaho, window cleaning boise" />
+        <meta property="og:title" content="Gallery - Point & Spray | Window Cleaning & Pressure Washing Results" />
+        <meta property="og:description" content="See the before and after results of our window cleaning and pressure washing services in Boise. Real transformations from real customers." />
         <meta property="og:url" content="https://pointandsprayidaho.com/gallery" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://pointandsprayidaho.com/gallery" />
@@ -45,7 +45,7 @@ const Gallery = () => {
             Results Gallery
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See the dramatic transformations our professional pressure washing services deliver. 
+            See the transformations our window cleaning and pressure washing services deliver.
             Real results from real customers in Boise and surrounding areas.
           </p>
         </header>
@@ -84,7 +84,7 @@ const Gallery = () => {
                   ))}
                 </ul>
                 <div className="text-sm text-gray-500 italic">
-                  <p>Professional pressure washing by Point & Spray</p>
+                  <p>Professional exterior cleaning by Point & Spray</p>
                   <p>Boise, Idaho area</p>
                 </div>
               </div>
@@ -98,12 +98,12 @@ const Gallery = () => {
               Ready to Transform Your Property?
             </h2>
             <p className="text-gray-600 mb-6">
-              Contact us today for a free quote and see how we can restore the beauty of your home or business.
+              Whether it's crystal-clear windows or a spotless driveway, contact us for a free quote and let's get your property looking its best.
             </p>
             <a
               href="/contact"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
-              aria-label="Get a free quote for pressure washing services"
+              aria-label="Get a free quote for window cleaning and pressure washing services"
             >
               Get Free Quote
             </a>
