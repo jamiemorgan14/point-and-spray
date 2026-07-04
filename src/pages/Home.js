@@ -133,9 +133,8 @@ export default function Home() {
             scheduling, a fair price, and accountability that doesn't disappear into a call center.
           </p>
           <p className="text-lg text-slate-600 leading-relaxed">
-            We won't tell you every stain comes out or every window looks brand new. Hard water
-            etching and old concrete staining don't always fully lift. What we will do is tell you
-            honestly what to expect before the work starts.
+            Every job starts with a straight answer: what it costs, what will come clean, and what
+            to expect. Then we show up and do the work.
           </p>
         </div>
       </section>
