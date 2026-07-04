@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-          <p>&copy; {new Date().getFullYear()} Point & Spray LLC. Veteran-owned, licensed & insured.</p>
+          <p>&copy; {new Date().getFullYear()} Point & Spray LLC. Veteran-owned & fully insured.</p>
           <div className="mt-2 space-x-4">
             <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>

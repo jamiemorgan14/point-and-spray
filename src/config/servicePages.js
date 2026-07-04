@@ -11,7 +11,7 @@ const servicePages = {
     h1: 'Window Cleaning',
     hero: [
       'Clean windows change how a house feels, inside and out. We clean glass, screens, and tracks for homes across Boise and the Treasure Valley, working room by room so nothing gets missed.',
-      'Licensed and insured. Serving Boise, Meridian, Eagle, and Garden City.',
+      'Fully insured. Serving Boise, Meridian, Eagle, and Garden City.',
     ],
     startingAt: null,
     priceNote: 'Free quotes, based on window count and size.',
@@ -41,11 +41,11 @@ const servicePages = {
     navLabel: 'Commercial Window Cleaning',
     navGroup: 'Window Cleaning',
     seoTitle: 'Commercial Window Cleaning in Boise, ID | Point & Spray',
-    metaDescription: 'Commercial window cleaning for offices, medical buildings, and multi-tenant properties in Boise and the Treasure Valley. Recurring schedules, licensed and insured.',
+    metaDescription: 'Commercial window cleaning for offices, medical buildings, and multi-tenant properties in Boise and the Treasure Valley. Recurring schedules, fully insured.',
     h1: 'Commercial Window Cleaning',
     hero: [
       'We clean windows for offices, medical buildings, apartment communities, and property managers around Boise. One point of contact, one invoice, a schedule you can set and forget.',
-      'Licensed and insured, with proof of insurance available for your property manager or HOA on request.',
+      'Fully insured, with proof of insurance available for your property manager or HOA on request.',
     ],
     startingAt: null,
     priceNote: 'Custom quotes based on building size, glass access, and visit frequency.',
@@ -65,7 +65,7 @@ const servicePages = {
     ],
     faqs: [
       { q: 'Can you work around our business hours?', a: 'Yes. Most commercial accounts are scheduled early morning or after close so cleaning doesn’t interfere with your day.' },
-      { q: 'Do you carry insurance?', a: 'Yes, Point & Spray is licensed and insured, and we can send proof of coverage for your records or your property manager.' },
+      { q: 'Do you carry insurance?', a: 'Yes, Point & Spray is fully insured, and we can send proof of coverage for your records or your property manager.' },
       { q: 'Can we set up a recurring contract?', a: 'Yes, that’s most of what we do for commercial clients. We set a schedule that works for your building and show up on it, no reminders needed.' },
     ],
     ctaLabel: 'Request a Commercial Quote',
@@ -111,11 +111,11 @@ const servicePages = {
     navLabel: 'Pressure Washing',
     navGroup: 'Pressure Washing',
     seoTitle: 'Pressure Washing in Boise, ID | Point & Spray',
-    metaDescription: 'Pressure washing and soft washing in Boise, Meridian, Eagle, and Garden City. House washing, patios, decks, and fences. Licensed and insured.',
+    metaDescription: 'Pressure washing and soft washing in Boise, Meridian, Eagle, and Garden City. House washing, patios, decks, and fences. Fully insured.',
     h1: 'Pressure Washing',
     hero: [
       'Dirt, algae, and grime build up on siding, patios, decks, and fences over a Boise summer. We use the right pressure and the right method for each surface, so you get it clean without damaging it.',
-      'Licensed and insured. Serving Boise and the Treasure Valley.',
+      'Fully insured. Serving Boise and the Treasure Valley.',
     ],
     startingAt: '$150+',
     priceNote: 'Patios, decks, and fences start around $150. House soft washing starts around $200. Final price depends on size.',
@@ -149,7 +149,7 @@ const servicePages = {
     h1: 'Concrete & Driveway Cleaning',
     hero: [
       'Driveways and walkways take a beating. Oil, tire marks, dirt, and algae build up, and nothing short of real pressure moves it. We run a surface cleaner attachment for even coverage, no stripes, no missed spots.',
-      'Licensed and insured. Serving Boise, Meridian, Eagle, and Garden City.',
+      'Fully insured. Serving Boise, Meridian, Eagle, and Garden City.',
     ],
     startingAt: '$100+',
     priceNote: 'Driveways and sidewalks start around $100. Garage and shop floors start around $250.',
@@ -182,7 +182,7 @@ const servicePages = {
     h1: 'Gutter Cleaning',
     hero: [
       'Clogged gutters back water up onto your roof and siding. We clear out leaves and debris, check that downspouts are flowing, and can brighten stained gutter exteriors in the same visit.',
-      'Licensed and insured. Serving Boise and the Treasure Valley.',
+      'Fully insured. Serving Boise and the Treasure Valley.',
     ],
     startingAt: '$100+',
     priceNote: 'Gutter brightening (exterior wash) starts around $100. Debris cleanout quoted by linear footage.',

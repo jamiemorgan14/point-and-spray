@@ -24,7 +24,7 @@ export default function About() {
         </p>
         <p className="text-lg text-slate-600 mb-4 leading-relaxed">
           That means showing up when we say we will, explaining what we're doing and why, and
-          treating your property like our own. Licensed and insured, with a straight answer on
+          treating your property like our own. Fully insured, with a straight answer on
           price before anything starts.
         </p>
         <p className="text-lg text-slate-600 mb-4 leading-relaxed">

@@ -10,8 +10,8 @@ export default function TrustBar() {
               <span className="text-2xl">🛡️</span>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-800">Licensed &amp; Insured</h4>
-              <p className="text-sm text-slate-600">Fully covered</p>
+              <h4 className="font-semibold text-slate-800">Fully Insured</h4>
+              <p className="text-sm text-slate-600">Proof of coverage on request</p>
             </div>
           </div>
 

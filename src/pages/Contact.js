@@ -117,7 +117,7 @@ export default function Contact() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-sky-400 mt-1">🛡️</span>
-                <span>Licensed & Insured</span>
+                <span>Fully Insured</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-sky-400 mt-1">🙋</span>

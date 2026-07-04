@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Window Cleaning & Exterior Cleaning in Boise, Idaho | Point & Spray</title>
-        <meta name="description" content="Window cleaning, commercial storefront window cleaning, pressure washing, and concrete cleaning in Boise and the Treasure Valley. Locally owned, licensed and insured. Call or text for a free quote." />
+        <meta name="description" content="Window cleaning, commercial storefront window cleaning, pressure washing, and concrete cleaning in Boise and the Treasure Valley. Locally owned and fully insured. Call or text for a free quote." />
         <meta name="keywords" content="window cleaning boise, commercial window cleaning boise, storefront window cleaning boise, pressure washing boise, driveway cleaning boise, gutter cleaning boise" />
         <meta property="og:title" content="Window Cleaning & Exterior Cleaning in Boise, Idaho | Point & Spray" />
         <meta property="og:description" content="Window cleaning, commercial storefront window cleaning, pressure washing, and concrete cleaning in Boise and the Treasure Valley." />
@@ -55,7 +55,7 @@ export default function Home() {
                 <span className="block text-sky-600">in Boise, Idaho</span>
               </h1>
               <p className="text-lg text-slate-700 font-medium mb-6">
-                Windows, storefronts, driveways, and gutters. Locally owned, licensed and insured,
+                Windows, storefronts, driveways, and gutters. Locally owned and fully insured,
                 serving Boise and the Treasure Valley.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -66,7 +66,7 @@ export default function Home() {
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 We run every job the same way: show up when we say we will, explain the work
-                clearly, and treat your property like our own. Licensed and insured, with a
+                clearly, and treat your property like our own. Fully insured, with a
                 straight answer on price before the work starts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
