@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReviewLinks from './ReviewLinks';
+import servicePages from '../config/servicePages';
 
 export default function Footer() {
   return (
@@ -10,33 +11,34 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Point & Spray</h3>
             <p className="text-sm text-slate-400 mb-4">
-              Veteran-owned window cleaning and pressure washing in Boise, Meridian, Eagle & Garden City.
-              Professional exterior cleaning that fits your schedule.
+              Veteran-owned window cleaning and pressure washing in Boise, Meridian,
+              Eagle & Garden City. Locally owned and run, not a franchise.
             </p>
             <div className="flex items-center gap-2 text-sm text-slate-400">
               <span>📍</span>
               <span>Boise, Idaho</span>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/services" className="hover:text-white transition-colors">Window Cleaning</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Screen Cleaning</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">House Soft Wash</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Driveway Cleaning</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Patio Restoration</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Gutter Brightening</Link></li>
+              {Object.entries(servicePages).map(([key, data]) => (
+                <li key={key}>
+                  <Link to={`/${data.slug}`} className="hover:text-white transition-colors">
+                    {data.navLabel}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold text-white mb-4">Contact</h4>
             <div className="space-y-2 text-sm">
               <p>
-                <a href="tel:+1-208-994-4085" className="hover:text-white transition-colors">
-                  📞 (208) 994-4085
+                <a href="tel:+12089944085" className="hover:text-white transition-colors">
+                  📞 Call/Text: (208) 994-4085
                 </a>
               </p>
               <p>
@@ -45,7 +47,7 @@ export default function Footer() {
                 </a>
               </p>
               <p className="text-slate-400">
-                📍 Service Area: Boise, Meridian, Eagle, Garden City
+                📍 Serving Boise & the Treasure Valley
               </p>
             </div>
           </div>
@@ -56,9 +58,9 @@ export default function Footer() {
             <ReviewLinks layout="column" size="sm" />
           </div>
         </div>
-        
+
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-          <p>&copy; 2025 Point & Spray. All rights reserved. Veteran-owned business.</p>
+          <p>&copy; {new Date().getFullYear()} Point & Spray LLC. Veteran-owned, licensed & insured.</p>
           <div className="mt-2 space-x-4">
             <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
@@ -67,4 +69,5 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}
+

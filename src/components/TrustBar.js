@@ -10,38 +10,38 @@ export default function TrustBar() {
               <span className="text-2xl">🛡️</span>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-800">Insured</h4>
+              <h4 className="font-semibold text-slate-800">Licensed &amp; Insured</h4>
               <p className="text-sm text-slate-600">Fully covered</p>
             </div>
           </div>
-          
+
           <div className="flex flex-col items-center gap-2">
             <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center">
-              <span className="text-2xl">⭐</span>
+              <span className="text-2xl">🎖️</span>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-800">Satisfaction</h4>
-              <p className="text-sm text-slate-600">Guaranteed</p>
+              <h4 className="font-semibold text-slate-800">Veteran-Owned</h4>
+              <p className="text-sm text-slate-600">Founded and run by a veteran</p>
             </div>
           </div>
-          
+
           <div className="flex flex-col items-center gap-2">
             <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center">
-              <span className="text-2xl">🎯</span>
+              <span className="text-2xl">🙋</span>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-800">Veteran</h4>
-              <p className="text-sm text-slate-600">Owned</p>
+              <h4 className="font-semibold text-slate-800">Locally Owned</h4>
+              <p className="text-sm text-slate-600">A Boise business, not a franchise</p>
             </div>
           </div>
-          
+
           <div className="flex flex-col items-center gap-2">
             <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center">
-              <span className="text-2xl">📱</span>
+              <span className="text-2xl">📍</span>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-800">Flexible</h4>
-              <p className="text-sm text-slate-600">Scheduling</p>
+              <h4 className="font-semibold text-slate-800">Treasure Valley</h4>
+              <p className="text-sm text-slate-600">Boise & surrounding areas</p>
             </div>
           </div>
         </div>

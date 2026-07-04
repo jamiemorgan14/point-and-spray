@@ -105,38 +105,39 @@ export default function Contact() {
       <section className="bg-slate-900 text-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h1 className="text-3xl font-bold mb-4">Book Your Exterior Clean</h1>
+            <h1 className="text-3xl font-bold mb-4">Get a Free Quote</h1>
             <p className="mt-2 text-slate-300 text-lg">
-              Window cleaning, pressure washing, or both — pick a time that works for you. We'll confirm details and send a text before arrival.
+              Tell us a bit about the job and we'll get back to you within 24 hours with pricing
+              and times that work. Text is usually fastest.
             </p>
             <ul className="mt-6 space-y-3 text-slate-300 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-sky-400 mt-1">📍</span>
-                <span>Service area: Boise, Meridian, Eagle, Garden City</span>
+                <span>Serving Boise, Meridian, Eagle & Garden City</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-sky-400 mt-1">🕒</span>
-                <span>Hours: Evenings & weekends to start; weekdays available on request</span>
+                <span className="text-sky-400 mt-1">🛡️</span>
+                <span>Licensed & Insured</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-sky-400 mt-1">✅</span>
-                <span>Insured • Satisfaction guaranteed</span>
+                <span className="text-sky-400 mt-1">🙋</span>
+                <span>You'll hear back from a real person here in Boise, not a call center</span>
               </li>
             </ul>
             <div className="mt-8 flex flex-col gap-3">
-              <a 
-                className="rounded-2xl border border-slate-600 px-5 py-3 text-center hover:border-slate-500 transition-colors" 
+              <a
+                className="rounded-2xl border border-slate-600 px-5 py-3 text-center hover:border-slate-500 transition-colors"
+                href="tel:+12089944085"
+                aria-label="Call or text Point & Spray at (208) 994-4085"
+              >
+                📞 Call/Text: (208) 994-4085
+              </a>
+              <a
+                className="rounded-2xl border border-slate-600 px-5 py-3 text-center hover:border-slate-500 transition-colors"
                 href="mailto:jamie@pointandsprayidaho.com"
                 aria-label="Email Point & Spray at jamie@pointandsprayidaho.com"
               >
                 ✉️ jamie@pointandsprayidaho.com
-              </a>
-              <a 
-                className="rounded-2xl border border-slate-600 px-5 py-3 text-center hover:border-slate-500 transition-colors" 
-                href="tel:+1-208-994-4085"
-                aria-label="Call Point & Spray at (208) 994-4085"
-              >
-                📞 (208) 994-4085
               </a>
             </div>
           </div>
