@@ -1,11 +1,39 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import BandAImage from '../assets/boise-exterior-cleaning-before-after.jpg';
-import AfterDrivewayImage from '../assets/boise-driveway-cleaning-after.jpg';
 import AfterWalkwayImage from '../assets/boise-walkway-cleaning-after.jpg';
+import GreenhouseImage from '../assets/boise-greenhouse-glass-cleaning.jpg';
+import StorefrontImage from '../assets/boise-storefront-window-cleaning.jpg';
+import GutterImage from '../assets/boise-gutter-cleaning-before-after.jpg';
+import PatioImage from '../assets/boise-paver-patio-pressure-washing-before-after.jpg';
+import DrivewayBAImage from '../assets/boise-driveway-pressure-washing-before-after.jpg';
 
 const Gallery = () => {
   const galleryItems = [
+    {
+      title: "All-Glass Greenhouse, Roof and Windows",
+      description: "Every pane on this greenhouse, including the full glass roof, cleaned in one visit. When the whole structure is glass, there's nowhere for shortcuts to hide.",
+      image: GreenhouseImage,
+      features: ["Glass roof cleaning", "Every pane, inside reach", "Frames and tracks wiped down"]
+    },
+    {
+      title: "Storefront Window Cleaning",
+      description: "Street-level retail glass, cleaned on a recurring schedule. Storefront glass is the first thing a customer sees, and it picks up fingerprints and weather fast.",
+      image: StorefrontImage,
+      features: ["Interior and exterior glass", "Door glass and frames", "Recurring schedule available"]
+    },
+    {
+      title: "Paver Patio, Before and After",
+      description: "This back patio had disappeared under dirt and weeds. One pressure washing visit later, it's a patio again. Same raised beds in both shots, same patio underneath the whole time.",
+      image: PatioImage,
+      features: ["Paver-safe pressure", "Dirt and growth cleared", "One visit"]
+    },
+    {
+      title: "Gutter Cleaning, Before and After",
+      description: "Left: packed with leaves and debris, water going nowhere. Right: cleared by hand and flowing again. Most Treasure Valley homes need this twice a year.",
+      image: GutterImage,
+      features: ["Debris cleared by hand", "Downspouts checked", "Debris hauled off, not left in the yard"]
+    },
     {
       title: "A Job in the Boise Area",
       description: "Years of built-up grime and algae, cleaned off. Not every surface comes back looking brand new, but this one came close.",
@@ -13,10 +41,10 @@ const Gallery = () => {
       features: ["Surface cleaning", "Algae removal", "Done in a single visit"]
     },
     {
-      title: "Driveway Cleaning",
-      description: "Oil stains, tire marks, and everyday dirt built up on this concrete driveway. A surface cleaner attachment gets even coverage without leaving stripes.",
-      image: AfterDrivewayImage,
-      features: ["Oil stain treatment", "Even, streak-free coverage", "Concrete-safe pressure"]
+      title: "Driveway Cleaning, Before and After",
+      description: "Top: a season of leaf stains, spotting, and everyday grime. Bottom: the same driveway after one pass with the surface cleaner. Even coverage, no stripes.",
+      image: DrivewayBAImage,
+      features: ["Surface cleaner, even coverage", "Stain and spot removal", "Concrete-safe pressure"]
     },
     {
       title: "Walkway & Sidewalk Cleaning",

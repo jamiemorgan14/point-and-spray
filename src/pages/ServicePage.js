@@ -1,10 +1,46 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import servicePages from '../config/servicePages';
+import squeegeePhoto from '../assets/window-cleaning-squeegee-boise.jpg';
+import storefrontPhoto from '../assets/boise-storefront-window-cleaning.jpg';
+import commercialPhoto from '../assets/boise-commercial-storefront-windows.jpg';
+import gutterPhoto from '../assets/boise-gutter-cleaning-before-after.jpg';
+import patioPhoto from '../assets/boise-paver-patio-pressure-washing-before-after.jpg';
+import drivewayPhoto from '../assets/boise-driveway-pressure-washing-before-after.jpg';
+
+// Photos stay out of servicePages.js so the postbuild script can import that
+// config as pure data. Keyed by the same page keys.
+const pagePhotos = {
+  windowCleaning: {
+    src: squeegeePhoto,
+    alt: 'Squeegee cleaning a home window in Boise, Idaho',
+  },
+  storefrontWindowCleaning: {
+    src: storefrontPhoto,
+    alt: 'Freshly cleaned storefront windows at a Boise retail shop',
+  },
+  commercialWindowCleaning: {
+    src: commercialPhoto,
+    alt: 'Commercial storefront glass after window cleaning in Boise, Idaho',
+  },
+  gutterCleaning: {
+    src: gutterPhoto,
+    alt: 'Gutter before and after cleaning in Boise: packed with leaves, then cleared and flowing',
+  },
+  pressureWashing: {
+    src: patioPhoto,
+    alt: 'Paver patio before and after pressure washing in Boise: buried under dirt, then clean red pavers',
+  },
+  concreteDriveway: {
+    src: drivewayPhoto,
+    alt: 'Concrete driveway before and after pressure washing in Boise: stained and spotted, then clean',
+  },
+};
 
 export default function ServicePage({ pageKey }) {
   const data = servicePages[pageKey];
   if (!data) return null;
+  const photo = pagePhotos[pageKey];
 
   const canonical = `https://pointandsprayidaho.com/${data.slug}`;
   const faqSchema = {
@@ -31,28 +67,41 @@ export default function ServicePage({ pageKey }) {
       </Helmet>
 
       <section className="bg-gradient-to-b from-sky-50 to-white">
-        <div className="mx-auto max-w-4xl px-4 py-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-sky-700 mb-2">
-            Boise &amp; the Treasure Valley
-          </p>
-          <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">{data.h1}</h1>
-          {data.hero.map((p, i) => (
-            <p key={i} className="text-lg text-slate-600 mb-4 leading-relaxed">{p}</p>
-          ))}
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <a
-              href="tel:+12089944085"
-              className="inline-flex items-center justify-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-xl hover:bg-sky-700 transition-colors"
-            >
-              Call or Text: (208) 994-4085
-            </a>
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-xl hover:bg-sky-50 transition-colors"
-            >
-              {data.ctaLabel}
-            </a>
+        <div className={`mx-auto px-4 py-16 ${photo ? 'max-w-6xl lg:grid lg:grid-cols-5 lg:gap-12 items-center' : 'max-w-4xl'}`}>
+          <div className={photo ? 'lg:col-span-3' : ''}>
+            <p className="text-sm font-semibold uppercase tracking-wide text-sky-700 mb-2">
+              Boise &amp; the Treasure Valley
+            </p>
+            <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">{data.h1}</h1>
+            {data.hero.map((p, i) => (
+              <p key={i} className="text-lg text-slate-600 mb-4 leading-relaxed">{p}</p>
+            ))}
+            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+              <a
+                href="tel:+12089944085"
+                className="inline-flex items-center justify-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-xl hover:bg-sky-700 transition-colors"
+              >
+                Call or Text: (208) 994-4085
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-xl hover:bg-sky-50 transition-colors"
+              >
+                {data.ctaLabel}
+              </a>
+            </div>
           </div>
+          {photo && (
+            <div className="mt-10 lg:mt-0 lg:col-span-2">
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          )}
         </div>
       </section>
 

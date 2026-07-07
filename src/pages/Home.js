@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import TrustBar from '../components/TrustBar';
-import BandAImage from '../assets/boise-exterior-cleaning-before-after.jpg';
 import servicePages from '../config/servicePages';
+import greenhouseImage from '../assets/boise-greenhouse-window-cleaning.jpg';
 
 const serviceCards = [
   {
@@ -89,14 +89,14 @@ export default function Home() {
 
             <div className="mt-12 lg:mt-0">
               <img
-                src={BandAImage}
-                alt="Before and after exterior cleaning by Point & Spray in Boise, Idaho"
+                src={greenhouseImage}
+                alt="All-glass greenhouse after a full window and roof cleaning by Point & Spray near Boise, Idaho"
                 className="w-full h-auto rounded-lg shadow-2xl"
                 loading="eager"
                 decoding="async"
               />
               <p className="text-center text-sm text-gray-500 mt-3 italic">
-                A recent job in the Boise area
+                An all-glass greenhouse we cleaned roof to sill, Treasure Valley
               </p>
             </div>
           </div>
