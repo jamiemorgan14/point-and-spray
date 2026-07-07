@@ -33,7 +33,10 @@ export default function Header() {
               width="48"
               height="48"
             />
-            <span className="font-bold text-xl text-slate-800">Point & Spray</span>
+            <span className="flex flex-col leading-tight">
+              <span className="font-bold text-xl text-slate-800">Point & Spray</span>
+              <span className="text-xs text-slate-500 tracking-wide">Window & Exterior Cleaning</span>
+            </span>
           </Link>
         </div>
 
@@ -52,7 +55,7 @@ export default function Header() {
                 className="text-slate-600 hover:text-slate-800 transition-colors flex items-center gap-1"
                 aria-haspopup="true"
                 aria-expanded={openDropdown === group.label}
-                onClick={() => setOpenDropdown(openDropdown === group.label ? null : group.label)}
+                onClick={() => setOpenDropdown(group.label)}
               >
                 {group.label}
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

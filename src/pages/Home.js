@@ -51,7 +51,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                Window Cleaning &amp; Exterior Cleaning
+                Window &amp; Exterior Cleaning
                 <span className="block text-sky-600">in Boise, Idaho</span>
               </h1>
               <p className="text-lg text-slate-700 font-medium mb-6">
